@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    tools:context="com.promotion.afpromotion.Promotion">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/borders">
+        <TableRow
+            android:id="@+id/row_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:id="@+id/title_1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/borders"
+
+                android:padding="32dp"
+                android:text="Abercrombie" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:background="@drawable/borders"
+                android:src="@drawable/af"
+                android:id="@+id/imageView_1" />
+                </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/row_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/borders"
+                    android:id="@+id/title_2"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="Hollister" />
+
+                <ImageView
+                    android:layout_width="175dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/borders"
+                    android:id="@+id/imageView_2"
+                    android:src="@drawable/hollister"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"/>
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
